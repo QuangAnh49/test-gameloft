@@ -7,7 +7,7 @@ import { useState } from 'react';
 import ContentCard from './contentCard/ContentCard';
 import { motion } from 'framer-motion';
 
-function SamplePrevSocialArrow(props) {
+function SamplePrevSocialArrow(props: any) {
   const { className, onClick, pagination, setPagination } = props;
   return (
     <>
@@ -22,7 +22,7 @@ function SamplePrevSocialArrow(props) {
               setPagination(8);
             } else {
               onClick();
-              setPagination(prev => prev - 1);
+              setPagination((prev: number) => prev - 1);
             }
           }}
         />
@@ -32,7 +32,7 @@ function SamplePrevSocialArrow(props) {
     </>
   );
 }
-function SampleNextSocialArrow(props) {
+function SampleNextSocialArrow(props: any) {
   const { className, onClick, pagination, setPagination } = props;
   return (
     <div className="arrow-next">
@@ -47,7 +47,7 @@ function SampleNextSocialArrow(props) {
             setPagination(1);
           } else {
             onClick();
-            setPagination(prev => prev + 1);
+            setPagination((prev: number) => prev + 1);
           }
         }}
       />
@@ -66,7 +66,7 @@ function Content() {
     slidesToShow: 3,
     speed: 3000,
     autoplay: true,
-    afterChange: index => {
+    afterChange: (index: number) => {
       setPagination(index + 1);
     },
     responsive: [

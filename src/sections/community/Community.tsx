@@ -114,7 +114,7 @@ function Community() {
     lazyLoad: true,
     slidesToScroll: 1,
     vertical: false,
-    afterChange: index => {
+    afterChange: (index: number) => {
       setPagination(index + 1);
     },
     nextArrow: <SampleNextSocialArrow pagination={pagination} setPagination={setPagination} />,
@@ -125,9 +125,9 @@ function Community() {
       return;
     }
     setPostList([...postList, posts[numberOfList + 1]]);
-    setNumberOfList(prev => prev + 1);
+    setNumberOfList((prev: number) => prev + 1);
   };
-  const handleSearch = e => {
+  const handleSearch = (e: any) => {
     const dataSearch = posts.filter(item => item.description.includes(e.target.value));
     setPostListDesktop(dataSearch);
   };

@@ -15,7 +15,7 @@ const SpecialEvent = () => {
     centerMode: true,
     paddingCenter: '10px',
     beforeChange: () => {},
-    appendDots: dots => (
+    appendDots: (dots: any) => (
       <div
         style={{
           borderRadius: '10px',
@@ -26,7 +26,7 @@ const SpecialEvent = () => {
         <ul style={{ margin: '0px', display: 'flex', gap: '10px' }}> {dots} </ul>
       </div>
     ),
-    customPaging: i => (
+    customPaging: (i: number) => (
       <>
         <span className="title timer" data-from="0" data-to="85" data-speed="1800">
           {i + 1}
@@ -41,7 +41,7 @@ const SpecialEvent = () => {
         breakpoint: 640,
         settings: {
           dots: false,
-          appendDotS: dots => <></>,
+          appendDotS: (dots: any) => <></>,
           slidesToShow: 1,
           infinite: true,
         },
