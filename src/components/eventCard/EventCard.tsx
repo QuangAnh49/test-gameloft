@@ -1,8 +1,7 @@
 import { EventCardProps } from '../../types';
 import './eventCard.scss';
-import link from '../../assets/link.svg';
 
-const EventCard = ({ imgUrl, description, title }: EventCardProps) => {
+const EventCard = ({ imgUrl, description }: EventCardProps) => {
   return (
     <div className="event-card" style={{ backgroundImage: `url(${imgUrl})` }}>
       <div className="event-card__link">
