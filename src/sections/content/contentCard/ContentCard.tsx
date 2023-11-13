@@ -2,7 +2,7 @@ import './contentCard.scss';
 import download from '../../../assets/download.svg';
 
 const ContentCard = ({ imgUrl, description }) => {
-  const handleDownload = async (src, title) => {
+  const handleDownload = async src => {
     const img = await fetch(src)
       .then(res => res.arrayBuffer())
       .then(buffer => new Blob([buffer], { type: 'image/jpeg' }));

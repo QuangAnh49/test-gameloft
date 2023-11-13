@@ -1,27 +1,25 @@
 import './contact.scss';
 import decorator from '../../assets/decorator.svg';
-import { variants } from '../../constants';
-import { animate, motion } from 'framer-motion';
+
+import { motion } from 'framer-motion';
 
 function Contact() {
   return (
     <div className="contact wrapper">
       <div className="contact-container ">
         <motion.div
-          variants={variants}
-          initial={variants.hidden}
-          transition={variants.transition}
-          whileInView={'visible'}
+          initial={{ opacity: 0, y: 100 }}
+          transition={{ duration: 2 }}
+          whileInView={{ opacity: 1, y: 0 }}
           className="contact-decorator"
         >
           <img src={decorator} alt="decorator" />
         </motion.div>
 
         <motion.form
-          variants={variants}
-          initial={variants.hidden}
-          whileInView={'visible'}
-          transition={variants.transition}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
           form
           className="contact-form"
           action="submit"

@@ -1,11 +1,10 @@
 import './postCard.scss';
 import facebook from '../../assets/facebook.svg';
-import link from '../../assets/link.svg';
 import img from '../../assets/img.svg';
 
 import { PostCardProps } from '../../types';
 
-function PostCard({ imgUrl, description }: PostCardProps) {
+function PostCard({ description }: PostCardProps) {
   return (
     <div className="post-card">
       <div className="card-icon icon__facebook">

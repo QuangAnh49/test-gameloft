@@ -8,6 +8,19 @@ export interface PostCardProps {
 }
 export interface EventCardProps {
   imgUrl: string;
-  title: string;
+  title?: string;
   description?: string;
+}
+export interface Variant {
+  visible: {
+    opacity: number;
+    y: number;
+  };
+  hidden: {
+    opacity: number;
+    y: number;
+  };
+  transition: {
+    duration: number;
+  };
 }

@@ -11,7 +11,7 @@ import linkedInIconM from '../../assets/linkedInIconM.svg';
 import twitterIconM from '../../assets/twitterIconM.svg';
 import youtubeIconM from '../../assets/youtubeIconM.svg';
 
-import { languageData, linkGameData, linkLegalData, variants } from '../../constants';
+import { languageData, linkGameData, linkLegalData } from '../../constants';
 import { useResponsive } from '../../utils';
 import { useState } from 'react';
 
@@ -73,10 +73,9 @@ function Footer() {
     return (
       <div className="footer">
         <motion.div
-          variants={variants}
-          initial={variants.hidden}
-          whileInView={'visible'}
-          transition={variants.transition}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
           className="footer-container wrapper"
         >
           <div className="footer-container__socials">
@@ -129,10 +128,9 @@ function Footer() {
           </div>
         </motion.div>
         <motion.div
-          variants={variants}
-          initial={variants.hidden}
-          whileInView={'visible'}
-          transition={variants.transition}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
           className="footer-sign wrapper"
         >
           <p>

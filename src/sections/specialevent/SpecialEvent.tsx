@@ -1,6 +1,6 @@
 import Slider from 'react-slick';
 import './specialEvent.scss';
-import { posts, variants } from '../../constants';
+import { posts } from '../../constants';
 import EventCard from '../../components/eventCard/EventCard';
 import { motion } from 'framer-motion';
 
@@ -51,10 +51,9 @@ const SpecialEvent = () => {
   return (
     <div className="event">
       <motion.div
-        variants={variants}
-        initial={variants.hidden}
-        whileInView={'visible'}
-        transition={variants.transition}
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2 }}
         className="event-container wrapper"
       >
         <h1 className="text-title">Special Events & Promotional</h1>
@@ -64,10 +63,9 @@ const SpecialEvent = () => {
         </p>
       </motion.div>
       <motion.div
-        variants={variants}
-        initial={variants.hidden}
-        whileInView={'visible'}
-        transition={variants.transition}
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2 }}
         className="event-promotion"
       >
         <Slider {...settings}>

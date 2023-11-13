@@ -2,7 +2,7 @@ import './content.scss';
 import Slider from 'react-slick';
 import nextArrow1 from '../../assets/nextArrow1.svg';
 import previousArrow1 from '../../assets/previousArrow1.svg';
-import { posts, variants } from '../../constants';
+import { posts } from '../../constants';
 import { useState } from 'react';
 import ContentCard from './contentCard/ContentCard';
 import { motion } from 'framer-motion';
@@ -85,10 +85,9 @@ function Content() {
     <>
       <div className="content">
         <motion.div
-          variants={variants}
-          initial={variants.hidden}
-          whileInView={'visible'}
-          transition={variants.transition}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
           className="content-container wrapper"
         >
           <h1>Exclusive Game Content</h1>
@@ -99,10 +98,9 @@ function Content() {
           </p>
         </motion.div>
         <motion.div
-          variants={variants}
-          initial={variants.hidden}
-          whileInView={'visible'}
-          transition={variants.transition}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
           className="content-socials"
         >
           <Slider {...setting1}>

@@ -1,3 +1,5 @@
+import { Variant } from '../types';
+
 export const socialPosts = [
   { imgUrl: 'https://games.assets.gameloft.com/assets/Oregon_Trail_App_Icon_29b4c1e941.jpg', title: 'Aaaa' },
   { imgUrl: 'https://games.assets.gameloft.com/assets/Oregon_Trail_App_Icon_29b4c1e941.jpg', title: 'Aaaa' },
@@ -86,7 +88,7 @@ export const linkLegalData = [
   'Event Rules',
   'Business Contacts',
 ];
-export const variants = {
+export const variants: Variant = {
   visible: { opacity: 1, y: 0 },
   hidden: { opacity: 0, y: 100 },
   transition: { duration: 2 },

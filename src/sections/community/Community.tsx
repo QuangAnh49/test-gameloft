@@ -8,26 +8,26 @@ import nextArrow from '../../assets/nextArrow.svg';
 import previousArrow from '../../assets/previousArrow.svg';
 import nextArrow1 from '../../assets/nextArrow1.svg';
 import previousArrow1 from '../../assets/previousArrow1.svg';
-import { posts, socialPosts, variants } from '../../constants';
+import { posts, socialPosts } from '../../constants';
 import StoryCard from '../../components/storyCard/StoryCard';
 import PostCard from '../../components/postCard/PostCard';
 import { useState } from 'react';
 import { useResponsive } from '../../utils';
 import { motion } from 'framer-motion';
 
-function SampleNextArrow(props) {
+function SampleNextArrow(props: any) {
   const { className, onClick } = props;
   return <img className={className} src={nextArrow} alt="next Arrow" onClick={onClick} />;
 }
 
-function SamplePrevArrow(props) {
+function SamplePrevArrow(props: any) {
   const { className, onClick } = props;
   return (
     <img className={className} src={previousArrow} style={{ zIndex: '1' }} alt="previousArrow" onClick={onClick} />
   );
 }
 
-function SamplePrevSocialArrow(props) {
+function SamplePrevSocialArrow(props: any) {
   const { className, onClick, pagination, setPagination } = props;
   return (
     <>
@@ -52,7 +52,7 @@ function SamplePrevSocialArrow(props) {
     </>
   );
 }
-function SampleNextSocialArrow(props) {
+function SampleNextSocialArrow(props: any) {
   const { className, onClick, pagination, setPagination } = props;
   return (
     <div className="arrow-next" style={{ position: 'absolute' }}>
@@ -135,10 +135,9 @@ function Community() {
     <>
       <div className="community">
         <motion.div
-          variants={variants}
-          initial={variants.hidden}
-          whileInView={'visible'}
-          transition={variants.transition}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
           className="community-container wrapper"
         >
           <h1>GAME COMMUNITY HUB</h1>
@@ -168,10 +167,9 @@ function Community() {
           </div>
         </motion.div>
         <motion.div
-          variants={variants}
-          initial={variants.hidden}
-          whileInView={'visible'}
-          transition={variants.transition}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
           className="community-socials"
         >
           {!isMobile ? (

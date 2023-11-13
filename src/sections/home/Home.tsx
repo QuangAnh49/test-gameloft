@@ -5,16 +5,14 @@ import eShop from '../../assets/eShop.svg';
 import microsoft from '../../assets/microsoft.svg';
 import steam from '../../assets/steam.svg';
 import { motion } from 'framer-motion';
-import { variants } from '../../constants';
 
 function Home() {
   return (
     <div className="home ">
       <motion.div
-        variants={variants}
-        initial={variants.hidden}
-        whileInView={'visible'}
-        transition={variants.transition}
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2 }}
         className="home-content wrapper"
       >
         <h1 className="home-content__title">GAMELOFT GAME</h1>
@@ -36,10 +34,9 @@ function Home() {
       </motion.div>
       <div className="home-install wrapper">
         <motion.div
-          variants={variants}
-          initial={variants.hidden}
-          whileInView={'visible'}
-          transition={variants.transition}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
           className="home-install__container"
         >
           <p className="install-content text-initial">Download latest version</p>
