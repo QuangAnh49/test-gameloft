@@ -1,7 +1,8 @@
 import './contentCard.scss';
 import download from '../../../assets/download.svg';
+import { ContentCardProps } from '../../../types';
 
-const ContentCard = (imgUrl: string) => {
+const ContentCard = ({ imgUrl, key }: ContentCardProps) => {
   const handleDownload = async (src: string) => {
     const img = await fetch(src)
       .then(res => res.arrayBuffer())
@@ -16,7 +17,7 @@ const ContentCard = (imgUrl: string) => {
     document.body.removeChild(link);
   };
   return (
-    <div className="content-card">
+    <div key={key} className="content-card">
       <img src={download} alt="download Icon" onClick={() => handleDownload(imgUrl)} />
     </div>
   );

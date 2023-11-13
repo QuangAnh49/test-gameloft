@@ -42,7 +42,7 @@ function SamplePrevSocialArrow(props: any) {
               setPagination(8);
             } else {
               onClick();
-              setPagination(prev => prev - 1);
+              setPagination((prev: number) => prev - 1);
             }
           }}
         />
@@ -67,7 +67,7 @@ function SampleNextSocialArrow(props: any) {
             setPagination(1);
           } else {
             onClick();
-            setPagination(prev => prev + 1);
+            setPagination((prev: number) => prev + 1);
           }
         }}
       />
@@ -111,7 +111,6 @@ function Community() {
     slidesToShow: 5,
     speed: 3000,
     autoplay: true,
-    lazyLoad: true,
     slidesToScroll: 1,
     vertical: false,
     afterChange: (index: number) => {

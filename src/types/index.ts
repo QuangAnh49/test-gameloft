@@ -11,6 +11,11 @@ export interface EventCardProps {
   title?: string;
   description?: string;
 }
+
+export interface ContentCardProps {
+  imgUrl: string;
+  key: string;
+}
 export interface Variant {
   visible: {
     opacity: number;

@@ -105,7 +105,7 @@ function Content() {
         >
           <Slider {...setting1}>
             {posts.map(post => (
-              <ContentCard {...post} key={post.description} />
+              <ContentCard imgUrl={post.imgUrl} key={post.description} />
             ))}
           </Slider>
         </motion.div>

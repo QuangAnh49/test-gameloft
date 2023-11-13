@@ -21,7 +21,7 @@ function Footer() {
   const [languageValue, setLanguageValue] = useState('English');
 
   const handleOpenDropdown = () => {
-    setOpen(prev => !prev);
+    setOpen((prev: boolean) => !prev);
   };
   const { isMobile } = useResponsive();
   if (isMobile) {

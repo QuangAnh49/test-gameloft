@@ -41,7 +41,7 @@ const SpecialEvent = () => {
         breakpoint: 640,
         settings: {
           dots: false,
-          appendDotS: (dots: any) => <></>,
+          appendDotS: () => <></>,
           slidesToShow: 1,
           infinite: true,
         },
