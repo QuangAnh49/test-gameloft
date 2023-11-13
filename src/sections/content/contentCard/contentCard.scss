@@ -1,0 +1,22 @@
+.content-card {
+  width: 30vw;
+  height: 40vh;
+  background-color: black;
+  background-repeat: no-repeat;
+  position: relative;
+  img {
+    border-radius: 100%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .content-card {
+    width: 95%;
+    height: 150px;
+    img {
+      width: 40px;
+    }
+  }
+}

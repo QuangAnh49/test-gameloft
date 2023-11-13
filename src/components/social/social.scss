@@ -1,0 +1,32 @@
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  width: 50px;
+  height: 120px;
+  position: sticky;
+  bottom: 40px;
+  left: 92%;
+  &__item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  &__item:hover {
+    border: 3px solid #71b9f7;
+    path,
+    ellipse,
+    circle {
+      fill: #71b9f7;
+      border: #71b9f7;
+      stroke: #71b9f7;
+    }
+  }
+}

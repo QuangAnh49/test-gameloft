@@ -1,0 +1,131 @@
+.event-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: calc(50vw / 3);
+  height: 50vh;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  &__link {
+    display: none;
+  }
+  &__link:hover {
+    border: 3px solid #71b9f7;
+    path,
+    ellipse,
+    circle {
+      fill: #71b9f7;
+      border: #71b9f7;
+      stroke: #71b9f7;
+    }
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    color: white;
+    h1 {
+      width: 70%;
+    }
+    hr {
+      display: none;
+      width: 20%;
+      margin: 10px 0px;
+    }
+    p {
+      display: none;
+      height: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  &-btn {
+    display: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid #ffff;
+    color: #ffff;
+    text-transform: uppercase;
+  }
+}
+.event-card:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(50vw / 3);
+  height: 50vh;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.1);
+  transition: all 200ms ease-in;
+  transform: scale(1.1);
+  margin-left: 10px;
+  margin-right: 10px;
+  //   transform: scale(1.5);
+  .event-card__link {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: white;
+  }
+  h1 {
+    width: 70%;
+  }
+  hr {
+    display: block;
+    width: 20%;
+    margin: 10px 0px;
+  }
+  p {
+    display: block;
+    width: 90%;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .event-card-btn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .event-card,
+  .event-card:hover {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .event-card {
+    align-items: flex-start;
+  }
+  .event-card:hover {
+    margin-left: 0px;
+  }
+}

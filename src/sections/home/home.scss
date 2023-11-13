@@ -1,0 +1,90 @@
+.home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #2699fb;
+
+  &-content {
+    // max-width: 600px;
+    padding-bottom: 32px;
+    gap: 10px;
+    color: #ffffff;
+    &__title {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    &__rate {
+      display: flex;
+      gap: 10px;
+      padding-bottom: 20px;
+      .rating {
+        padding-left: 10px;
+        display: flex;
+        gap: 5px;
+        border-left: 1px solid #ffff;
+      }
+    }
+    &__description {
+      font-size: 20px;
+    }
+  }
+  &-install {
+    width: 100%;
+    background-color: #d8edff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    &__container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .install-content {
+        font-size: 20px;
+        font-weight: 900;
+        cursor: pointer;
+      }
+      .install-cards {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .home {
+    &-content {
+      padding: 40px;
+      &__title {
+        font-size: 45px;
+      }
+      &__description {
+        font-size: 14px;
+        width: 90%;
+        line-height: 18px;
+      }
+    }
+    &-install {
+      height: 210px;
+      &__container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0px 40px;
+        .install-content {
+          font-size: 25px;
+        }
+        .install-cards {
+          flex-wrap: wrap;
+          padding-bottom: 20px;
+          img {
+            width: 45%;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}

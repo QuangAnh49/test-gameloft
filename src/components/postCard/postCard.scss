@@ -1,0 +1,62 @@
+.post-card {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  width: calc(20vw - 38px);
+  height: 38vh;
+  border-radius: 5px;
+  border: 1px solid #2699fb;
+  background-color: #d5ecff;
+  .card-icon {
+    position: absolute;
+    top: 10px;
+    .icon {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  .icon__facebook {
+    left: 10px;
+  }
+  .icon__link {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    right: 10px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    justify-content: center;
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .icon__link:hover {
+    border: 3px solid #71b9f7;
+    path,
+    ellipse,
+    circle {
+      fill: #71b9f7;
+      border: #71b9f7;
+      stroke: #71b9f7;
+    }
+  }
+  &__image {
+    width: 160px;
+  }
+  p {
+    font-size: 13px;
+    color: #2699fb;
+  }
+}
+@media screen and (max-width: 640px) {
+  .post-card {
+    width: 100%;
+    height: 350px;
+    overflow-y: hidden;
+  }
+}

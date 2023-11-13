@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 60px;
+  height: 76px;
+  background-color: #2985e7;
+  position: sticky;
+  top: 0px;
+  z-index: 999999999999;
+  &-logo {
+    width: 229px;
+    height: 71px;
+  }
+  &-hamburger {
+    width: 40px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header {
+    padding: 0 20px;
+    &-logo {
+      width: 112px;
+      height: 35px;
+    }
+    &-hamburger {
+      width: 24px;
+    }
+  }
+}
