@@ -17,7 +17,7 @@ const ContentCard = ({ imgUrl, key }: ContentCardProps) => {
     document.body.removeChild(link);
   };
   return (
-    <div key={key} className="content-card">
+    <div key={key} className="content-card" style={{ backgroundImage: `url(${imgUrl})` }}>
       <img src={download} alt="download Icon" onClick={() => handleDownload(imgUrl)} />
     </div>
   );

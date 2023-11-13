@@ -12,53 +12,53 @@ export const socialPosts = [
 
 export const posts = [
   {
-    imgUrl: 'https://games.assets.gameloft.com/assets/Oregon_Trail_App_Icon_29b4c1e941.jpg',
+    imgUrl: 'https://main.assets.gameloft.com/assets/gaming-business/g4b/GL%20revamp_G4B_3rd%20slide.png',
     description:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.',
   },
   {
-    imgUrl: 'https://games.assets.gameloft.com/assets/Oregon_Trail_App_Icon_29b4c1e941.jpg',
+    imgUrl: 'https://main.assets.gameloft.com/assets/gaming-business/g4b/GL%20revamp_G4B_3rd%20slide.png',
     description:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.',
   },
   {
-    imgUrl: 'https://games.assets.gameloft.com/assets/Oregon_Trail_App_Icon_29b4c1e941.jpg',
+    imgUrl: 'https://main.assets.gameloft.com/assets/gaming-business/g4b/GL%20revamp_G4B_3rd%20slide.png',
     description:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.',
   },
 
   {
-    imgUrl: 'https://games.assets.gameloft.com/assets/Oregon_Trail_App_Icon_29b4c1e941.jpg',
+    imgUrl: 'https://main.assets.gameloft.com/assets/gaming-business/g4b/GL%20revamp_G4B_3rd%20slide.png',
     description:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.',
   },
   {
-    imgUrl: 'https://games.assets.gameloft.com/assets/Oregon_Trail_App_Icon_29b4c1e941.jpg',
+    imgUrl: 'https://main.assets.gameloft.com/assets/gaming-business/g4b/GL%20revamp_G4B_3rd%20slide.png',
     description:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.',
   },
   {
-    imgUrl: 'https://games.assets.gameloft.com/assets/Oregon_Trail_App_Icon_29b4c1e941.jpg',
+    imgUrl: 'https://main.assets.gameloft.com/assets/gaming-business/g4b/GL%20revamp_G4B_3rd%20slide.png',
     description:
       'Quang Anh ne, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.',
   },
   {
-    imgUrl: 'https://games.assets.gameloft.com/assets/Oregon_Trail_App_Icon_29b4c1e941.jpg',
+    imgUrl: 'https://main.assets.gameloft.com/assets/gaming-business/g4b/GL%20revamp_G4B_3rd%20slide.png',
     description:
       'Quang Anh ne, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.',
   },
   {
-    imgUrl: 'https://games.assets.gameloft.com/assets/Oregon_Trail_App_Icon_29b4c1e941.jpg',
+    imgUrl: 'https://main.assets.gameloft.com/assets/gaming-business/g4b/GL%20revamp_G4B_1st%20slide.png',
     description:
       'Quang Anh ne, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.',
   },
   {
-    imgUrl: 'https://games.assets.gameloft.com/assets/Oregon_Trail_App_Icon_29b4c1e941.jpg',
+    imgUrl: 'https://main.assets.gameloft.com/assets/gaming-business/g4b/GL%20revamp_G4B_1st%20slide.png',
     description:
       'Quang Anh ne, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.',
   },
   {
-    imgUrl: 'https://games.assets.gameloft.com/assets/Oregon_Trail_App_Icon_29b4c1e941.jpg',
+    imgUrl: 'https://main.assets.gameloft.com/assets/gaming-business/g4b/GL%20revamp_G4B_1st%20slide.png',
     description:
       'Quang Anh ne, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.',
   },
