@@ -13,6 +13,7 @@ const SpecialEvent = () => {
     slidesToShow: 5,
     slidesToScroll: 1,
     centerMode: true,
+    swipeToSlide: true,
     paddingCenter: '10px',
     beforeChange: () => {},
     appendDots: (dots: any) => (
@@ -44,6 +45,7 @@ const SpecialEvent = () => {
           appendDotS: () => <></>,
           slidesToShow: 1,
           infinite: true,
+          slidesToScroll: 1,
         },
       },
     ],
